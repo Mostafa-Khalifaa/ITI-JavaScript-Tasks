@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="input-group">
+            <label>Name</label> 
+            <input type="text" id="nameInput" placeholder="enter name">
+            <span id="nameError" class="error-msg">name is required</span>
+        </div>
+
+        <div class="input-group">
+            <label>Age</label> 
+            <input type="text" id="ageInput" placeholder="enter age">
+            <span id="ageError" class="error-msg">age must be a number</span>
+        </div>
+
+        <div class="input-group">
+            <label>E-mail</label> 
+            <input type="text" id="emailInput" placeholder="enter email">
+            <span id="emailError" class="error-msg">invalid email</span>
+        </div>
+
+        <br>
+        <button onclick="addData()">Add</button>
+        <button onclick="resetForm()">Reset</button>
+
+        <br><br>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
